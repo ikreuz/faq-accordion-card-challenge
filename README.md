@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 - Solution URL: [https://github.com/ikreuz](https://github.com/ikreuz/faq-accordion-card-challenge)
-- Live Site URL: [https://vercel.com]()
+- Live Site URL: [https://vercel.com](https://faq-accordion-card-challenge.vercel.app)
 
 ## My process
 
