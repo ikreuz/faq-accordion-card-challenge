@@ -6,45 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./src/css/style.css">
 
     <title>Frontend Mentor | FAQ Accordion Card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 
-<body>
-    How many team members can I invite?
-    You can invite up to 2 additional users on the Free plan. There is no limit on
-    team members for the Premium plan.
+<body class="backdrop">
+    <main class="container container--size">
+        <section class="layout-card-content">
+            <div class="layout-card layout-card--left">
+                <div class="layout-card__box">
+                    <img src="./src/images/illustration-box-desktop.svg" alt="">
+                </div>
+                <div class="layout-card__image">
+                    <img src="./src/images/illustration-woman-online-mobile.svg" alt="">
+                </div>
+                <div class="layout-card__backdrop">
+                    <img src="./src/images/bg-pattern-desktop.svg" alt="">
+                </div>
+            </div>
+            <div class="layout-card layout-card--right">
+                <div class="layout-card__header">
+                    <h2>FAQ</h2>
+                </div>
+                <div id="accordion-1-si" class="accordion border-bottom">
+                    <div class="accordion-header active-link">
+                        <h4>
+                            How many team members can I invite?
+                        </h4>
+                        <span data-arrow="accordion-arrow">
+                            <img src="./src/images/icon-arrow-down.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="accordion-body show" data-accordion="data-accordion-1">
+                        <div class="accordion-content">
+                            You can invite up to 2 additional users on the Free plan. There is no limit on
+                            team members for the Premium plan.
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion-2-si" class="accordion border-bottom">
+                    <div class="accordion-header">
+                        <h4>
+                            What is the maximum file upload size?
+                        </h4>
+                        <span data-arrow="accordion-arrow">
+                            <img src="./src/images/icon-arrow-down.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="accordion-body" data-accordion="data-accordion-2">
+                        <div class="accordion-content">
+                            No more than 2GB. All files in your account must fit your allotted storage space.
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion-3-si" class="accordion border-bottom">
+                    <div class="accordion-header">
+                        <h4>
+                            How do I reset my password?
+                        </h4>
+                        <span data-arrow="accordion-arrow">
+                            <img src="./src/images/icon-arrow-down.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="accordion-body" data-accordion="data-accordion-3">
+                        <div class="accordion-content">
+                            Click “Forgot password” from the login page or “Change password” from your profile page.
+                            A reset link will be emailed to you.
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion-4-si" class="accordion border-bottom">
+                    <div class="accordion-header">
+                        <h4>
+                            Can I cancel my subscription?
+                        </h4>
+                        <span data-arrow="accordion-arrow">
+                            <img src="./src/images/icon-arrow-down.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="accordion-body" data-accordion="data-accordion-4">
+                        <div class="accordion-content">
+                            Yes! Send us a message and we’ll process your request no questions asked.
+                        </div>
+                    </div>
+                </div>
+                <div id="accordion-5-si" class="accordion border-bottom">
+                    <div class="accordion-header">
+                        <h4>
+                            Do you provide additional support?
+                        </h4>
+                        <span data-arrow="accordion-arrow">
+                            <img src="./src/images/icon-arrow-down.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="accordion-body" data-accordion="data-accordion-5">
+                        <div class="accordion-content">
+                            Chat and email support is available 24/7. Phone lines are open during normal business
+                            hours.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    What is the maximum file upload size?
-    No more than 2GB. All files in your account must fit your allotted storage space.
 
-    How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your profile page.
-    A reset link will be emailed to you.
+    <footer class="footer">
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/ikreuz/">Victor Cruz</a>.
+        </p>
+    </footer>
 
-    Can I cancel my subscription?
-    Yes! Send us a message and we’ll process your request no questions asked.
+    <script src="src/js/script.js"></script>
 
-    Do you provide additional support?
-    Chat and email support is available 24/7. Phone lines are open during normal business hours.
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
 </body>
 
 </html>
